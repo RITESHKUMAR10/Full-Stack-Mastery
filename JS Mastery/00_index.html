@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- OPTION 1: script in <head> with defer -->
+    <!-- HTML parsing nahi rukti, script sirf HTML parse hone ke BAAD execute hoti hai -->
+    <!-- <script src="JS Mastery/04_hello_world_javascript_code.js" defer></script> -->
+
+    <!-- OPTION 2: script in <head> without defer (not recommended) -->
+    <!-- Script turant chalti hai, HTML abhi parse hui nahi hoti -->
+    <!-- Agar script DOM access kare to error/null milega -->
+    <!-- <script src="JS Mastery/04_hello_world_javascript_code.js"></script> -->
+</head>
+<body>
+    <h1>Check the console (F12) for output</h1>
+
+    <!-- OPTION 3 (ACTIVE): script at the end of <body> without defer -->
+    <!-- Most common/classic approach. Body yahan tak pura parse ho chuka hota hai, -->
+    <!-- isliye script ko DOM access karne me koi problem nahi hoti, defer ki bhi zaroorat nahi. -->
+    <script src="04_hello_world_javascript_code.js"></script>
+</body>
+</html>
